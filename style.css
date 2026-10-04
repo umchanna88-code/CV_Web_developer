@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ddd;
+    color: #222;
+}
+.cv {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 38% 62%;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.left {
+    background: #202a36;
+    color: #eee;
+    padding: 40px 28px;
+}
+.profile-photo {
+    width: 185px;
+    height: 185px;
+    display: block;
+    margin: 0 auto 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.left section {
+    margin-bottom: 28px;
+}
+.left h2 {
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+.left p {
+    color: #d5d8dc;
+    font-size: 14px;
+    line-height: 1.65;
+}
+.left hr {
+    border: none;
+    height: 2px;
+    background: #707780;
+    margin: 25px 5px;
+}
+.left ul {
+    list-style: none;
+}
+.left li {
+    color: #d5d8dc;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.left li::before {
+    content: "•";
+    color: white;
+    margin-right: 12px;
+}
+.right {
+    padding: 42px 48px;
+    background: #fff;
+}
+.right h1 {
+    font-size: 51px;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.job {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.short-line {
+    width: 70px;
+    height: 4px;
+    background: #222;
+    margin-bottom: 30px;
+}
+.right section {
+    margin-bottom: 24px;
+}
+.right section > h2 {
+    font-size: 21px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #777;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+}
+.item,
+.project {
+    margin-left: 38px;
+    margin-bottom: 16px;
+}
+.item h3,
+.project h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.item p,
+.project p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.right-list {
+    margin-left: 40px;
+}
+.right-list li {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+@media print {
+    body {
+        background: white;
+    }
+    .cv {
+        margin: 0;
+        width: 210mm;
+        min-height: 297mm;
+        box-shadow: none;
+    }
+    @page {
+        size: A4;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        background: #202a36;
+    }
+    .cv {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .left,
+    .right {
+        padding: 30px 25px;
+    }
+    .right h1 {
+        font-size: 42px;
+    }
+}
